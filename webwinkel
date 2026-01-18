@@ -1,0 +1,369 @@
+/* Algemene reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7c6d9;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header en navigatie */
+header {
+    background-color: #e89bb8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff0f5;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #fff;
+    color: #e89bb8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #e89bb8;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #e89bb8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Grid voor producten */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #f7c6d9;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Productpagina */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 40px;
+}
+
+.product-container img {
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.product-details {
+    max-width: 500px;
+}
+
+.product-details h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    margin-bottom: 15px;
+}
+
+/* Contactformulier */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBeautyStore - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">TheBeautyStore</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">🛒</a>
+    </nav>
+</header>
+
+<section class="hero" style="text-align:center; padding:80px 20px;">
+    <h1 style="font-size:48px;">Glow like never before</h1>
+    <p style="font-size:20px; margin:20px 0;">Premium makeup voor elke look</p>
+    <a class="btn" href="shop.html">Shop nu</a>
+</section>
+
+<section class="featured-products">
+    <h2 style="text-align:center; margin-bottom:20px;">Populaire producten</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="images/lipstick.jpg" alt="Rose Glow Lipstick">
+            <h3>Rose Glow Lipstick</h3>
+            <p>€19,95</p>
+            <button>Toevoegen</button>
+        </div>
+        <div class="product-card">
+            <img src="images/eyeshadow.jpg" alt="Shimmer Eyeshadow Palette">
+            <h3>Shimmer Eyeshadow Palette</h3>
+            <p>€29,95</p>
+            <button>Toevoegen</button>
+        </div>
+        <div class="product-card">
+            <img src="images/blush.jpg" alt="Peach Blush">
+            <h3>Peach Blush</h3>
+            <p>€15,95</p>
+            <button>Toevoegen</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 TheBeautyStore | Volg ons op Instagram & Facebook
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBeautyStore - Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">TheBeautyStore</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">🛒</a>
+    </nav>
+</header>
+
+<section style="padding: 40px 20px;">
+    <h1 style="text-align:center; margin-bottom:30px;">Onze Producten</h1>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="images/lipstick.jpg" alt="Rose Glow Lipstick">
+            <h3>Rose Glow Lipstick</h3>
+            <p>€19,95</p>
+            <a href="product.html" class="btn">Bekijk</a>
+        </div>
+        <div class="product-card">
+            <img src="images/eyeshadow.jpg" alt="Shimmer Eyeshadow Palette">
+            <h3>Shimmer Eyeshadow Palette</h3>
+            <p>€29,95</p>
+            <a href="product.html" class="btn">Bekijk</a>
+        </div>
+        <div class="product-card">
+            <img src="images/blush.jpg" alt="Peach Blush">
+            <h3>Peach Blush</h3>
+            <p>€15,95</p>
+            <a href="product.html" class="btn">Bekijk</a>
+        </div>
+        <div class="product-card">
+            <img src="images/foundation.jpg" alt="Liquid Foundation">
+            <h3>Liquid Foundation</h3>
+            <p>€25,95</p>
+            <a href="product.html" class="btn">Bekijk</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 TheBeautyStore | Volg ons op Instagram & Facebook
+</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBeautyStore - Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">TheBeautyStore</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">🛒</a>
+    </nav>
+</header>
+
+<section class="product-container">
+    <img src="images/lipstick.jpg" alt="Rose Glow Lipstick">
+    <div class="product-details">
+        <h2>Rose Glow Lipstick</h2>
+        <p>Prijs: €19,95</p>
+        <p>Onze Rose Glow Lipstick geeft je lippen een zachte, langdurige kleur en glans. Dierproefvrij en vegan-friendly.</p>
+        <label>Kleur:</label>
+        <select>
+            <option>Roze</option>
+            <option>Rood</option>
+            <option>Nude</option>
+        </select>
+        <br><br>
+        <button>Toevoegen aan winkelmand</button>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 TheBeautyStore | Volg ons op Instagram & Facebook
+</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBeautyStore - Over Ons</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">TheBeautyStore</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">🛒</a>
+    </nav>
+</header>
+
+<section style="padding:60px 20px; text-align:center;">
+    <h1>Over TheBeautyStore</h1>
+    <p style="max-width:600px; margin:20px auto;">
+        Wij geloven dat make-up zelfvertrouwen geeft.  
+        Onze producten zijn zorgvuldig geselecteerd om kwaliteit, stijl en comfort te combineren.  
+        Dierproefvrij, vegan-friendly en altijd trendy.
+    </p>
+</section>
+
+<footer>
+    &copy; 2026 TheBeautyStore | Volg ons op Instagram & Facebook
+</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBeautyStore - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">TheBeautyStore</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+        <a href="shop.html">🛒</a>
+    </nav>
+</header>
+
+<section style="padding:40px 20px;">
+    <h1 style="text-align:center; margin-bottom:30px;">Contacteer ons</h1>
+    <form>
+        <input type="text" placeholder="Naam" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea placeholder="Bericht" rows="5" required></textarea>
+        <button type="submit">Verstuur</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2026 TheBeautyStore | Volg ons op Instagram & Facebook
+</footer>
+</body>
+</html>
