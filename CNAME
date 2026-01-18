@@ -1,1 +1,13 @@
-thebeuatystore.nl
+thebeuatystore.nlTheBeautyStore/
+│
+├─ index.html
+├─ shop.html
+├─ product.html
+├─ about.html
+├─ contact.html
+├─ style.css
+└─ images/
+      ├─ lipstick.jpg
+      ├─ eyeshadow.jpg
+      ├─ blush.jpg
+      └─ foundation.jpg
